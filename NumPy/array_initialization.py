@@ -1,9 +1,11 @@
 # Import numpy
 import numpy as np
 
-# ARRAYS  - Initialize
+# ARRAYS  - Initialization
 # unlike Python lists, NumPy is constrained to arrays that all contain the same type
 # unlike Python lists, NumPy arrays can explicitly be multidimensional
+
+# Accessing arrays array[0] or array[0,0] or array[-1] (last element)
 
 # Integer Array
 np.array([1, 4, 2, 5, 3])
