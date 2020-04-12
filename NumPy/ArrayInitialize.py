@@ -1,7 +1,7 @@
 # Import numpy
 import numpy as np
 
-# ARRAYS 
+# ARRAYS  - Initialize
 # unlike Python lists, NumPy is constrained to arrays that all contain the same type
 # unlike Python lists, NumPy arrays can explicitly be multidimensional
 
@@ -55,8 +55,8 @@ np.linspace(0, 1, 5)
 np.random.random((3, 3))
 
 # Create a 3x3 array of random integers in the interval [0, 10[ - start included, end not incuded
+# if end is not mentioned, start is used as the highest limit (not included)
 # [ [2, 1, 5],
 #   [5, 4, 7],
 #   [0, 5, 0] ]
 np.random.randint(0, 10, (3, 3))
-
