@@ -35,6 +35,9 @@ np.zeros(10, dtype=int)
 #  [1. 1. 1. 1. 1.] ] 
 np.ones((3, 5), dtype=float)
 
+# Create an empty array, one dimensional, size 5
+np.empty(5)
+
 # Create a 3x5 array filled with a specific value
 #[ [3.14 3.14 3.14 3.14 3.14]
 #  [3.14 3.14 3.14 3.14 3.14]
