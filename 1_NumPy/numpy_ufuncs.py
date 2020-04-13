@@ -46,4 +46,41 @@ array.min(axis=1)
 # np.sum  / np.nansum 
 #np.prod / np.nanprod
 
+# BOOLEAN Arrays
 
+# Count number of True entries in a Boolean array
+
+ # how many values less than 6?
+np.count_nonzero(x < 6)
+
+# False is interpreted as 0, and True is inter‐ preted as 1:
+np.sum(x < 6)
+
+# how many values less than 6 in each row? 
+np.sum(x < 6, axis=1)
+
+ #Any values greater than 8? 
+ np.any(x > 8)
+
+ # are all values less than 10? 
+ np.all(x < 10)
+
+ # are all values in each row less than 8? 
+np.all(x < 8, axis=1)
+
+ # count values between an interval
+np.sum((x > 0.5) & (x < 1))
+
+# Masking operations
+
+# select values from an array based on a condition
+# extract values from x where x < 5
+x[x < 5]
+
+# a mask can be set and reused
+
+# construct a mask of all rainy days 
+rainy = (inches > 0)
+
+# median for all days in inches where inches > 0
+np.median(inches[rainy])
