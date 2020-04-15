@@ -59,6 +59,8 @@ x = np.array([1, 2, 3])
 y = np.array([3, 2, 1])
 np.concatenate([x, y])
 
+
+
 # Concatenation - Vertical stack 
 # (add all arrays at the column ends - attempts to keep same number of rows)
 
@@ -102,6 +104,17 @@ upper, lower = np.vsplit(grid, [2])
 # left with columns [0,2[, right with columns [2,:]
 left, right = np.hsplit(grid, [2])
 
+# Sort the array or X.sort()
+np.sort(X) 
+
+# Returns the indexes that would sort the array
+np.argsort(X)
+
+ # sort each column of X 
+ np.sort(X, axis=0)
+
+ # sort each row of X 
+ np.sort(X, axis=1)
 
 
 
